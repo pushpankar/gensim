@@ -19,8 +19,7 @@ from gensim.models.keyedvectors import KeyedVectors
 class TestDataType(unittest.TestCase):
     def load_model(self, datatype):
         path = datapath('high_precision.kv.txt')
-        kv = KeyedVectors.load_word2vec_format(path, binary=False,
-                                               datatype=datatype)
+        kv = KeyedVectors.load_word2vec_format(path, binary=False, datatype=datatype)
         return kv
 
     def test_high_precision(self):
